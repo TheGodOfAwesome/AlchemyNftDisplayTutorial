@@ -42,7 +42,6 @@ const Home: NextPage = (/*{ images }: { images: ImageProps[] }*/) => {
       setPhotos(nfts.ownedNfts);
 
       // Print NFTs
-      // console.log(nfts);
       // console.log(nfts.ownedNfts);
 
       {
@@ -53,10 +52,8 @@ const Home: NextPage = (/*{ images }: { images: ImageProps[] }*/) => {
           )
         })
       }
-      console.log(pictures);
       await setImages(pictures);
       console.log(images);
-      await setPhotos(pictures);
     }
 
     getNFTs()
@@ -108,9 +105,9 @@ const Home: NextPage = (/*{ images }: { images: ImageProps[] }*/) => {
               An example of how to pull and display NFTS froma specific address using Alchemy API!
             </p>
             <a
+              href="https://github.com/TheGodOfAwesome/AlchemyNftDisplayTutorial/tree/main"
               className="pointer z-10 mt-6 rounded-lg border border-white bg-white px-3 py-2 text-sm font-semibold text-black transition hover:bg-white/10 hover:text-white md:mt-4"
               target="_blank"
-              onClick={()=>{alert("click")}}
               rel="noreferrer"
             >
               Open Repo
